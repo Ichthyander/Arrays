@@ -12,6 +12,19 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            int[] array = new int[7];
+            float average = 0;
+
+            Console.WriteLine("Введите элементы массива");
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = Convert.ToInt32(Console.ReadLine());
+                average += array[i];
+            }
+
+            Console.WriteLine("Среднее арифметическое массива = {0}", average / array.Length);
+            Console.ReadKey();
         }
     }
 }
